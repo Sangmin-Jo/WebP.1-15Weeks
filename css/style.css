@@ -6,16 +6,19 @@ html{font-family: pretendard, sans-serif;
 
 body{overflow-x:hidden; overflow-y:auto;}
 
-main{width: 1280px; margin: auto; padding-bottom: 100vw; z-index: 850;}
+main{width: 1280px; margin: auto; z-index: 850;}
+body{padding-bottom: 20vw;}
 
 
 h3,p{font-weight: 600;}
 h1,h2,h4{font-family: bc-ludva, sans-serif; font-weight: 400}
 	h1{font-size: 192px; filter: drop-shadow(0px 16px 8px rgba(0, 0, 0, 0.2)); text-align: center; }		
 	h2{font-size: 56px; text-align: left; margin-top: 160px}
-	h3{font-size: 24px; margin-bottom: 40px; text-align: left; }
+	h3{font-size: 17px; margin-top: 40px; text-align: center;}
+	h5{font-size: 17px; margin: 0px; text-align: center;}
 	h4{font-size: 36px; text-align: center; margin: 0}
 	p{font-size: 17px; line-height: 26px; text-align: left; }
+	.brand{color: gray; margin-bottom: 8px}
 
 	.wrapper p{opacity: 0; transform: translateX(-100px); animation: wow 1s forwards;
 			animation-delay: 0.3s}
@@ -69,6 +72,7 @@ main img{filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4)); width: 100%}
 	border:none; padding: 0; margin: 0; transition: 0.3s; 
 	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='96' viewport='0 0 100 100' style='fill:black;font-size:48px;'><text y='50%'>🎣</text></svg>") 0 32, auto;
 }
+
 #lures img:hover{filter: drop-shadow(0px 86px 36px rgba(0, 0, 0, 0.15)) brightness(1.3); scale: 1.2; }
 
 .vh2{height: 6vh; width: auto;}
@@ -125,7 +129,14 @@ main img{filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4)); width: 100%}
 	25% {transform: rotateZ(-10deg);}
 	50% {padding-top: 400px;}
 	75% {transform: rotateZ(10deg);}
-
 }
 
 .movie{width: 1280px; height: 720px; border: solid white 4px; filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));}
+footer{z-index: 998; padding-top: 20px; filter: drop-shadow(0px 80px 160px rgba(0, 0, 0, 0.6));}
+.container{display: flex; gap: 40px 40px; flex-wrap: wrap;}
+.credit{display: block; width: 220px; margin-bottom: 48px; gap: 40px;}
+.credit img{width: 100%; filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); background: transparent; 
+	border:none; padding: 0; margin: 0; transition: 0.3s; 
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='96' viewport='0 0 100 100' style='fill:black;font-size:48px;'><text y='50%'>🎣</text></svg>") 0 32, auto;
+}
+ .credit img: hover{filter: drop-shadow(0px 16px 16px rgba(0, 0, 0, 0.15)) brightness(1.3); scale: 1.2; }
